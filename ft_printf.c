@@ -6,7 +6,7 @@
 /*   By: ztrottie <zakytrottier@hotmail.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:06:25 by ztrottie          #+#    #+#             */
-/*   Updated: 2022/11/23 15:25:31 by ztrottie         ###   ########.fr       */
+/*   Updated: 2022/11/24 13:45:30 by ztrottie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,6 @@ int	ft_printf(const char *str, ...)
 		}
 		i++;
 	}
+	va_end(arg);
 	return (count);
 }
