@@ -1,7 +1,7 @@
 
 NAME	=	libftprintf.a
 
-SRCS	=	ft_printf.c ft_hexa_len.c ft_pointer.c ft_putnbr_base_upp.c \
+SRCS	=	ft_printf.c ft_hexa_len.c ft_pointer.c \
 			ft_putnbr_base.c ft_putnbr_len.c ft_putnbr_printf.c ft_putnbr_u.c \
 			ft_putstr_printf.c ft_putnbr_base_ul.c\
 

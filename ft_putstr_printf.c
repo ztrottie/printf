@@ -6,7 +6,7 @@
 /*   By: ztrottie <zakytrottier@hotmail.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 10:27:07 by ztrottie          #+#    #+#             */
-/*   Updated: 2022/11/23 13:26:55 by ztrottie         ###   ########.fr       */
+/*   Updated: 2022/11/25 22:22:16 by ztrottie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_putstr_printf(char *s)
 	i = 0;
 	if (!s)
 		s = "(null)";
-	while (i < ft_strlen(s))
-		write(1, &s[i++], 1);
+	write(1, s, ft_strlen(s));
 	return (ft_strlen(s));
 }

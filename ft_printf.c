@@ -6,7 +6,7 @@
 /*   By: ztrottie <zakytrottier@hotmail.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 09:06:25 by ztrottie          #+#    #+#             */
-/*   Updated: 2022/11/24 13:45:30 by ztrottie         ###   ########.fr       */
+/*   Updated: 2022/11/25 22:15:28 by ztrottie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,8 @@ int	ft_define_ft(char c, va_list arg)
 		count = ft_putnbr_printf(va_arg(arg, int));
 	else if (c == 'u')
 		count = ft_putnbr_u(va_arg(arg, unsigned int));
-	else if (c == 'x')
-		count = ft_putnbr_base(va_arg(arg, unsigned int));
-	else if (c == 'X')
-		count = ft_putnbr_base_upp(va_arg(arg, unsigned int));
+	else if (c == 'x' || c == 'X')
+		count = ft_putnbr_base(va_arg(arg, unsigned int), c);
 	else if (c == '%')
 		ft_putchar_fd('%', 1);
 	return (count);
